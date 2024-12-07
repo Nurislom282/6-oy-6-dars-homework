@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="{%url 'main'%}">
+        <img
+          src="{% static 'images/logo.png' %}"
+          height="35"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'main'%}">Asosiy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact'%}">Contacts</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+  </div>
+  <!-- Container wrapper -->
+</nav>
+  <!-- Navbar -->
+
+  <!-- About Us Section -->
+  <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Katta Kutubxona</h2>
+                <p>
+                    Kutubxona haqiqiy me’moriy mo‘jiza bo‘lib, bilim va xotirjamlik maskani sifatida qad rostlagan. Ulkan kitob javonlari poldan shiftgacha cho‘zilib, o‘z bag‘rida minglab kitoblarni jamlagan. Bu kitoblar turli janrlar, tillar va davrlarni qamrab oladi. Baland gumbazli shiftlar nafis naqshlar bilan bezatilgan, baland rangli shishali derazalardan tushayotgan oltinrang yorug‘lik esa sayqallangan yog‘och polga rang-barang naqshlar soladi.
+                    Uzoq-uzun stollar bir maromda joylashtirilgan, atrofida o‘quvchilar ochiq kitoblarga tikilib o‘tirishibdi, yuzlari eski mis chiroqlarning iliq nuri bilan yoritilgan. Havo bo‘ylab eski qog‘oz va charm muqovalarining yoqimli hidi taraladi, bu joyga nostalji va hurmat hissini olib keladi. Keng spiral zinapoyalar va shinam mezzanin qavatlari yuqori javonlarga olib boradi, u yerda nodir va qadimiy qo‘lyozmalar ehtiyotkorlik bilan saqlanadi.
+                    Kutubxonaning har bir burchagida sahifalar shitirlashi va ohista qadam tovushlari bu maskanning diqqat va kashfiyot markazi ekanini eslatib turadi. Yakka holda ishlash uchun maxsus xonachalar chuqur fikrlash imkonini beradi, keng zallar esa kitobxonlarni adabiy dunyolarni kashf etishga chorlaydi. Siz olim bo‘lasizmi, orzular og‘ushidagi insonmi yoki sarguzasht ishqibozi – bu kutubxona doimiy ravishda hikoyalar, donishmandlik va tasavvurni jonlantiradigan muqaddas makondir.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/library.jpg' %}" class="img-fluid" alt="Company Image" height="500px" width="1000px">
+            </div>
+        </div>
+    </div>
+  <!-- About Us Section -->
+
+  <!-- FOOTER-->
+  <footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  <!-- FOOTER-->
+
+</div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
